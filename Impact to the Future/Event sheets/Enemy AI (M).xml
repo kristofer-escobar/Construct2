@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Enemy AI (M)</name>
+    <events>
+        <comment>The time span for the enemies to appear will be alot shorter(I set it like this becasue testing is easier when theres more or them)</comment>
+        <event-block sid="2021231697222717">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="6698674898011088" type="System">
+                    <param id="0" name="Interval (seconds)">0.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="6580234681716035" type="System">
+                    <param id="0" name="Object to create">Enemy2</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">0</param>
+                    <param id="3" name="Y">random(1,460)</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Unlike the last Layout(lvl one (S)) I didnt have to attack the hitbox for the enemy becasue we are creating a new on every x seconds and i dont think a pinned object can stay connected during something like that.</comment>
+        <event-block sid="5825838179791994">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8982076195176381" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="8291478627124849" type="Player2">
+                    <param id="0" name="Pin to">PlayerHB2</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1587973307576912">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="3933239591495651" type="Player2">
+                    <param id="0" name="Object">Enemy2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="4254758856801586" type="Enemy2">
+                    <param id="0" name="Animation">&quot;attack&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1568158418682468">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="1579175819335293" type="Player2">
+                    <param id="0" name="Object">Enemy2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8090212736601478" type="Enemy2">
+                    <param id="0" name="Animation">&quot;default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>The same thing for polishing as the other layout the hitbox but instead of the enemy hitbox i think the players hitbox may need to be the one that will be bigger</comment>
+    </events>
+</c2eventsheet>

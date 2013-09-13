@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Enemy AI (S) </name>
+    <events>
+        <comment>This event sheet will cover the stationary based enemy for stage 1</comment>
+        <event-block sid="526979162737406">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6175955953359738" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="2802592431632467" type="Enemy">
+                    <param id="0" name="Pin to">EnemyHB</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="9034425585096664" type="Player">
+                    <param id="0" name="Pin to">PlayerHB</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2728370084730076">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="4051879263617394" type="Player">
+                    <param id="0" name="Object">EnemyHB</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6107295581816182" type="Enemy">
+                    <param id="0" name="Animation">&quot;attack&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="149085376768926">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="4411827977241825" type="Player">
+                    <param id="0" name="Object">EnemyHB</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="9505821706192565" type="Enemy">
+                    <param id="0" name="Animation">&quot;default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>There could be alot more polishing on the mech&apos;s of this but it will do for now.(the things that should be done are Make the hit box larger so that the spikes pop out sooner and then make the impact spot the sprite itself that way the spikes pop out and give the player a chance to move away and instead of just seeing themselves get spiked when they touch.)</comment>
+    </events>
+</c2eventsheet>
