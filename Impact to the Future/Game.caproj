@@ -10,14 +10,16 @@
     <unique-id>150xcdp92pxoj</unique-id>
     <saved-with-version>13900</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
     </used-plugins>
     <used-behaviors>
-        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
-        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="wrap" version="1">Wrap</behavior>
     </used-behaviors>
     <used-effects />
@@ -42,153 +44,210 @@
         <prop name="Use iOS retina display">All devices</prop>
     </configuration-settings>
     <object-folder expanded="1">
-        <object-folder expanded="0" name="Enemy AI (S) LVl1">
-            <object-type name="TiledBackground" sid="2609931908715946">
-                <plugin id="TiledBg" />
-                <texture />
-            </object-type>
-            <object-type name="Enemy" sid="746693560078094">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Rotate" sid="9200196318351464">
-                        <behavior id="Rotate" />
-                    </behavior-type>
-                    <behavior-type name="Wrap" sid="2007572144040784">
-                        <behavior id="wrap" />
-                    </behavior-type>
-                    <behavior-type name="Pin" sid="3170939027665638">
-                        <behavior id="Pin" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder expanded="1">
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="26919767336107" speed="5">
-                        <frame duration="1" hotspotX="0.601156" hotspotY="0.531792" />
-                    </animation>
-                    <animation framecount="1" loop="0" name="Attack" pingpong="0" repeatcount="1" repeatto="0" sid="9877467289565087" speed="5">
-                        <frame duration="1" hotspotX="0.56" hotspotY="0.522523" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="EnemyHB" sid="7918530403316751">
-                <plugin id="Sprite" />
-                <animation-folder expanded="1">
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7221073108908901" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Player" sid="1197990349000694">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Pin" sid="5701225072945839">
-                        <behavior id="Pin" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder expanded="1">
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3359954101484447" speed="5">
-                        <frame duration="1" hotspotX="0.69863" hotspotY="0.591837" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="PlayerHB" sid="4804168413458101">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="8Direction" sid="6168626489665097">
-                        <behavior id="EightDir" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder expanded="1">
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3084540115063971" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    </animation>
-                </animation-folder>
-            </object-type>
+        <object-folder expanded="1" name="LVL 1">
+            <object-folder expanded="0" name="Enemy AI (M) Lvl1">
+                <object-type name="TiledBackground2" sid="2200923444079947">
+                    <plugin id="TiledBg" />
+                    <texture />
+                </object-type>
+                <object-type name="Player2" sid="8060049224902675">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Pin" sid="676092773960165">
+                            <behavior id="Pin" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder expanded="1">
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2370054805857875" speed="5">
+                            <frame duration="1" hotspotX="0.69863" hotspotY="0.591837" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="PlayerHB2" sid="6978096913758122">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="8Direction" sid="5233098685264986">
+                            <behavior id="EightDir" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder expanded="1">
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2834389679606703" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Enemy2" sid="1416500395765903">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Rotate" sid="493613324824321">
+                            <behavior id="Rotate" />
+                        </behavior-type>
+                        <behavior-type name="Pin" sid="7707189985588405">
+                            <behavior id="Pin" />
+                        </behavior-type>
+                        <behavior-type name="Bullet" sid="6567262843103786">
+                            <behavior id="Bullet" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder expanded="1">
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9403874299211532" speed="5">
+                            <frame duration="1" hotspotX="0.601156" hotspotY="0.531792" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="Attack" pingpong="0" repeatcount="1" repeatto="0" sid="7141388362800989" speed="5">
+                            <frame duration="1" hotspotX="0.56" hotspotY="0.522523" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="EnemyHB2" sid="851838438289186">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Bullet" sid="6834634846808773">
+                            <behavior id="Bullet" />
+                        </behavior-type>
+                        <behavior-type name="Wrap" sid="1975746910893762">
+                            <behavior id="wrap" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder expanded="1">
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9611646717308041" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder expanded="0" name="Enemy AI (S) LVl1">
+                <object-type name="TiledBackground" sid="2609931908715946">
+                    <plugin id="TiledBg" />
+                    <texture />
+                </object-type>
+                <object-type name="Enemy" sid="746693560078094">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Rotate" sid="9200196318351464">
+                            <behavior id="Rotate" />
+                        </behavior-type>
+                        <behavior-type name="Wrap" sid="2007572144040784">
+                            <behavior id="wrap" />
+                        </behavior-type>
+                        <behavior-type name="Pin" sid="3170939027665638">
+                            <behavior id="Pin" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder expanded="1">
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="26919767336107" speed="5">
+                            <frame duration="1" hotspotX="0.601156" hotspotY="0.531792" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="Attack" pingpong="0" repeatcount="1" repeatto="0" sid="9877467289565087" speed="5">
+                            <frame duration="1" hotspotX="0.56" hotspotY="0.522523" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="EnemyHB" sid="7918530403316751">
+                    <plugin id="Sprite" />
+                    <animation-folder expanded="1">
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7221073108908901" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Player" sid="1197990349000694">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Pin" sid="5701225072945839">
+                            <behavior id="Pin" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder expanded="1">
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3359954101484447" speed="5">
+                            <frame duration="1" hotspotX="0.69863" hotspotY="0.591837" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="PlayerHB" sid="4804168413458101">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="8Direction" sid="6168626489665097">
+                            <behavior id="EightDir" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder expanded="1">
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3084540115063971" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder expanded="1" name="Boss AI">
+                <object-type name="TiledBackground3" sid="4013951372881954">
+                    <plugin id="TiledBg" />
+                    <texture />
+                </object-type>
+                <object-type name="Boss" sid="477798044541725">
+                    <plugin id="Sprite" />
+                    <animation-folder expanded="1">
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3466525852547204" speed="5">
+                            <frame duration="1" hotspotX="0.456853" hotspotY="0.437126" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Player3" sid="5311248121920378">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Pin" sid="5675024090337429">
+                            <behavior id="Pin" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder expanded="1">
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2766564298541252" speed="5">
+                            <frame duration="1" hotspotX="0.69863" hotspotY="0.591837" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
         </object-folder>
-        <object-folder expanded="0" name="Enemy AI (M) Lvl1">
-            <object-type name="TiledBackground2" sid="2200923444079947">
-                <plugin id="TiledBg" />
-                <texture />
-            </object-type>
-            <object-type name="Player2" sid="8060049224902675">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Pin" sid="676092773960165">
-                        <behavior id="Pin" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder expanded="1">
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2370054805857875" speed="5">
-                        <frame duration="1" hotspotX="0.69863" hotspotY="0.591837" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="PlayerHB2" sid="6978096913758122">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="8Direction" sid="5233098685264986">
-                        <behavior id="EightDir" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder expanded="1">
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2834389679606703" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Enemy2" sid="1416500395765903">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Rotate" sid="493613324824321">
-                        <behavior id="Rotate" />
-                    </behavior-type>
-                    <behavior-type name="Pin" sid="7707189985588405">
-                        <behavior id="Pin" />
-                    </behavior-type>
-                    <behavior-type name="Bullet" sid="6567262843103786">
-                        <behavior id="Bullet" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder expanded="1">
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9403874299211532" speed="5">
-                        <frame duration="1" hotspotX="0.601156" hotspotY="0.531792" />
-                    </animation>
-                    <animation framecount="1" loop="0" name="Attack" pingpong="0" repeatcount="1" repeatto="0" sid="7141388362800989" speed="5">
-                        <frame duration="1" hotspotX="0.56" hotspotY="0.522523" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="EnemyHB2" sid="851838438289186">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Bullet" sid="6834634846808773">
-                        <behavior id="Bullet" />
-                    </behavior-type>
-                    <behavior-type name="Wrap" sid="1975746910893762">
-                        <behavior id="wrap" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder expanded="1">
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9611646717308041" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-        </object-folder>
+        <object-type name="Touch" sid="5216559012198685">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Audio" sid="208689565928208">
+            <plugin id="Audio" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
-        <layout-folder expanded="0" name="Lvl1 AI">
+        <layout-folder expanded="1" name="Lvl1 AI">
             <layout>Enemy AI (S) .xml</layout>
             <layout>Enemy AI (M).xml</layout>
+            <layout>Boss AI.xml</layout>
         </layout-folder>
     </layout-folder>
     <event-folder expanded="1">
         <event-folder expanded="0" name="Lvl1 AI">
             <event-sheet>Enemy AI (M).xml</event-sheet>
             <event-sheet>Enemy AI (S) .xml</event-sheet>
+            <event-sheet>Boss AI.xml</event-sheet>
         </event-folder>
     </event-folder>
-    <global-instances />
+    <global-instances>
+        <global-instance type="Touch" uid="12">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Audio" uid="13">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+                <speed-of-sound>5000</speed-of-sound>
+                <doppler-factor>1</doppler-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
     <sounds-folder expanded="1" />
     <music-folder expanded="1" />
     <files-folder expanded="1">
